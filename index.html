@@ -1,1 +1,59 @@
-s
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Sesli Asistan Demo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+        }
+
+        .container {
+            text-align: center;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            max-width: 500px;
+            width: 90%;
+        }
+
+        h1 {
+            color: #2d3436;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: #636e72;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            color: #0984e3;
+            font-weight: bold;
+        }
+    </style>
+    
+    <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Sesli Asistan Demo</h1>
+        <p>Aşağıdaki butona veya widget'a tıklayarak <span class="highlight">Yapay Zeka Asistanımız</span> ile konuşmaya başlayabilirsiniz.</p>
+        <p style="font-size: 0.9em; margin-top: 20px; color: #888;">(Mikrofon izni vermeyi unutmayın)</p>
+        
+        <elevenlabs-convai agent-id="agent_2101kcnqffehe1et5c252mcqwqkn"></elevenlabs-convai>
+    </div>
+
+</body>
+</html>
